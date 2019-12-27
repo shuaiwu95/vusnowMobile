@@ -1,11 +1,15 @@
 /**
  * 系统级扩展方法
  */
-import { LocaStorage } from './storage'
+import { LocaStorage, setToken, clearStorage, clearToken, setStorage } from './storage'
 export default {
   install (Vue) {
+    window.LocaStorage = window.plus ? window.plus.storage : localStorage
     // 本地存储
     Vue.prototype.$storage = LocaStorage
-    window.LocaStorage = window.plus ? window.plus.storage : localStorage
+    Vue.prototype.$setToken = setToken
+    Vue.prototype.$clearStorage = clearStorage
+    Vue.prototype.$clearToken = clearToken
+    Vue.prototype.$setStorage = setStorage
   }
 }

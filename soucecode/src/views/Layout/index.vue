@@ -8,6 +8,7 @@ export default {
   name: 'Layout',
   methods: {
     toLogin () {
+      this.$clearToken()
       this.$router.push({ name: 'Login' })
     }
   }
