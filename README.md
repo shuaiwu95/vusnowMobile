@@ -3,10 +3,10 @@
 ### 该框架提供项目的基本架构 包括路由、接口模型、常用组件、路由缓存、路由权限 等设计
 
 #### 路由
-```
-router
-routerCache
 
+> router
+> routerCache
+```
 {
     path: '/',
     name: 'Name',
@@ -15,9 +15,8 @@ routerCache
         isCache: true
     }
 }
-
-mera.isCache   当前路由是否需要缓存机制
 ```
+> mera.isCache   当前路由是否需要缓存机制
 #### 接口模型
 ```
 $api
