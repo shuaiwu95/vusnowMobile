@@ -6,6 +6,17 @@
 ```
 router
 routerCache
+
+{
+    path: '/',
+    name: 'Name',
+    component: ComponentName,
+    meta: {
+        isCache: true
+    }
+}
+
+mera.isCache   当前路由是否需要缓存机制
 ```
 #### 接口模型
 ```
