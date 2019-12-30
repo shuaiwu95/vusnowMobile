@@ -41,7 +41,19 @@ this.$api['system.loginIn']({
 ```
 #### 常用组件
 ```
-待开发
+// 输入框
+import VInput from '@common/VInput'
+<v-input
+    :roles="[{required:true,message:'密码不得为空！'}]" // roles 内容校验 required: 是否必填 message：提示内容
+    @on-model="getPsw" // @on-model 输入监听回调函数
+    placeholder="请输入密码"
+    icon="icon-pswInput" // icon 头部图标
+    type="password"/> // type 输入框类型
+// 按钮
+import VButton from '@common/VButton'
+<v-button
+    @on-click="login"
+    type="blue"/> // type 按钮类型
 ```
 #### 路由权限
 ```
