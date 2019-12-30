@@ -18,7 +18,9 @@
           type="password"/>
         </div>
         <div class="login-con-item-group">
-          <v-button @on-click="login"/>
+          <v-button
+          :isDisabled="btnDisabled"
+          @on-click="login"/>
         </div>
       </div>
     </div>
@@ -41,13 +43,20 @@ export default {
       // 登录跳转
       this.$router.push({ name: 'Layout' })
     },
-    getUsN (val) { this.userName = val },
-    getPsw (val) { this.psw = val }
+    getUsN (val) {
+      this.userName = val
+      this.btnDisabled = !!(this.userName === '' || this.psw === '')
+    },
+    getPsw (val) {
+      this.psw = val
+      this.btnDisabled = !!(this.userName === '' || this.psw === '')
+    }
   },
   data () {
     return {
       userName: '',
-      psw: ''
+      psw: '',
+      btnDisabled: true
     }
   }
 }

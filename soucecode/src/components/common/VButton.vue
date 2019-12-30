@@ -1,6 +1,6 @@
 <template>
     <div class="v-button-container" :style="{width:width}">
-        <button @click="clickBtn" :style="{backgroundColor:btnType[type]}">{{label}}</button>
+        <button @click="clickBtn" :class="isDisabled? 'disColor': ''" :style="{backgroundColor:btnType[type]}">{{label}}</button>
     </div>
 </template>
 <script>
@@ -16,10 +16,16 @@ export default {
     },
     type: {
       default: 'blue'
+    },
+    isDisabled: {
+      default: ''
     }
   },
   methods: {
     clickBtn () {
+      if (this.isDisabled) {
+        return
+      }
       this.$emit('on-click')
     }
   },
@@ -41,4 +47,7 @@ export default {
     color: #ffffff;
 }
 button:focus {outline:none;}
+.disColor{
+  background-color: #b9d1e0!important;
+}
 </style>
