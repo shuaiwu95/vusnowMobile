@@ -12,14 +12,15 @@ this.$plusExtends(() => {
     })
  })
 ```
-#### 路由
+#### 路由属性配置
 ```
 {
     path: '/',
     name: 'Name',
     component: ComponentName,
     meta: {
-        isCache: true // 该路由是否需要启动缓存机制
+        isCache: true, // 该路由是否需要启动缓存机制
+        requireAuth: true 是否需要token权限
     }
 }
 ```
