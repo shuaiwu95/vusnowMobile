@@ -41,9 +41,9 @@ export default {
 <style scoped>
 .v-button-container button {
     width: 100%;
-    height: 3rem;
+    height: 2.2rem;
     border: 0;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     color: #ffffff;
 }
 button:focus {outline:none;}

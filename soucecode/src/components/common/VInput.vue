@@ -90,13 +90,13 @@ export default {
     border-bottom: 1px solid #E7E7E7;
 }
 .v-input-label{
-    font-size: 2rem;
+    font-size: 1rem;
     flex: 1;
-    height: 2rem;
+    height: 1rem;
 }
 .v-input-label span {
-    font-size: 2rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
 }
 .v-input-inp {
   flex: 10;
@@ -104,10 +104,10 @@ export default {
 }
 .v-input-container input {
     border: 0;
-    height: 2rem;
-    font-size: 2rem;
+    height: 1rem;
+    font-size: 1rem;
     outline:none;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 .v-input-msg{
   position: absolute;

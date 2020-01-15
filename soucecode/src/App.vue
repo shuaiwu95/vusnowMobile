@@ -14,7 +14,7 @@ export default {
       html.style.fontSize = `${width / 50}px`
     },
     addViewToVisided () {
-      const thisRoute = this.$route.name ? this.$route : null
+      const thisRoute = this.$route.meta.isCache ? this.$route : null
       if (thisRoute) this.$store.dispatch('views/addVisitedViews', { route: thisRoute })
     }
   },
@@ -29,10 +29,10 @@ export default {
     })
   },
   mounted () {
-    this.initRem()
-    window.onresize = () => {
-      this.initRem()
-    }
+    // this.initRem()
+    // window.onresize = () => {
+    //   this.initRem()
+    // }
     this.addViewToVisided()
   }
 }

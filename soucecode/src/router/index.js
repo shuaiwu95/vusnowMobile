@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import { beforeEachFn } from './routerBeforeFn'
 import Layout from '@/views/Layout'
 import Login from '@/views/Login'
+import Home from '@/views/Home'
+import Mine from '@/views/Mine'
+import ClassView from '@/views/ClassView'
 Vue.use(Router)
 const routerInstance = new Router({
   routes: [
@@ -15,7 +18,31 @@ const routerInstance = new Router({
         requireAuth: true
       },
       children: [
-
+        {
+          path: '/',
+          name: 'Home',
+          component: Home,
+          meta: {
+            isCache: false,
+            requireAuth: false
+          }
+        }, {
+          path: 'classview',
+          name: 'ClassView',
+          component: ClassView,
+          meta: {
+            isCache: false,
+            requireAuth: false
+          }
+        }, {
+          path: 'mine',
+          name: 'Mine',
+          component: Mine,
+          meta: {
+            isCache: false,
+            requireAuth: false
+          }
+        }
       ]
     }, {
       path: '/login',
