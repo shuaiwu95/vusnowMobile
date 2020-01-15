@@ -2,7 +2,16 @@
 ## 一款基于vue架构的移动端框架
 ### 该框架提供项目的基本架构 包括路由、接口模型、常用组件、路由缓存、路由权限 等设计
 #### ui
-[http://vue.ydui.org/](YDUI)   
+[http://vue.ydui.org/](YDUI)
+#### 结合 H5+ API使用
+```
+this.$plusExtends(() => {
+    var cmr = window.plus.camera.getCamera()
+    cmr.captureImage((path) => {
+        alert(path)
+    })
+ })
+```
 #### 路由
 ```
 {
