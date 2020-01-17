@@ -51,6 +51,7 @@ this.$api['system.loginIn']({
 })
 ```
 #### 常用组件
+##### ConView
 ```
 // ConView 外层容器组件 该组件可自动计算除顶部导航和底部导航外中间可用区域的高度
 <con-view></con-view>
