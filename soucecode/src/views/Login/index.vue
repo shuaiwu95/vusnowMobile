@@ -20,6 +20,7 @@
         <div class="login-con-item-group">
           <v-button
           :isDisabled="btnDisabled"
+          label="立即登录"
           @on-click="login"/>
         </div>
       </div>
