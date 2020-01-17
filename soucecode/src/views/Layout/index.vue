@@ -27,6 +27,9 @@ export default {
       activeClass: 'getClass',
       activeMine: 'getMine'
     })
+  },
+  mounted () {
+    this.$store.state.botNav.activeHome = true
   }
 }
 </script>

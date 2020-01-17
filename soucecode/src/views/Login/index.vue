@@ -41,7 +41,7 @@ export default {
       // 存储TOKEN
       this.$setToken('TOKEN-855225-1515-9664')
       // 登录跳转
-      this.$router.push({ name: 'Layout' })
+      this.$router.push({ name: 'Home' })
     },
     getUsN (val) {
       this.userName = val
