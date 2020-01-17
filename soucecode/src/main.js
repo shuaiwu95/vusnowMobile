@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import vuescroll from 'vuescroll'
 import App from './App.vue'
 import YDUI from 'vue-ydui' /* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
 import 'vue-ydui/dist/ydui.rem.css'
@@ -12,6 +13,12 @@ Vue.use(config)
 Vue.use(sys)
 Vue.use(tool)
 Vue.use(YDUI)
+Vue.use(vuescroll) // install the vuescroll first
+Vue.prototype.$vuescrollConfig = { // 注册下拉刷新组件
+  bar: {
+    background: 'transparent'
+  }
+}
 new Vue({
   router: Router,
   store: Store,
