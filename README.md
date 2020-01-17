@@ -52,6 +52,31 @@ this.$api['system.loginIn']({
 ```
 #### 常用组件
 ```
+// ConView 外层容器组件 该组件可自动计算除顶部导航和底部导航外中间可用区域的高度
+<con-view></con-view>
+// vuescroll 下拉刷新、上拉加载
+<vue-scroll
+    :refreshStart='refreshStart'
+    :loadStart='loadStart'
+    :noData='true'
+>
+</vue-scroll>      
+methods: {
+    // 刷新开始
+    refreshStart (done) {
+      setTimeout(() => {
+        // 这里写 ajax 业务请求，在数据请求到后执行 done() 关闭动画
+        done()
+      }, 1600)
+    },
+    // 加载开始
+    loadStart (done) {
+      setTimeout(() => {
+        // 这里写 ajax 业务请求，在数据请求到后执行 done() 关闭动画
+        done()
+      }, 1600)
+    }
+  }
 // 输入框
 import VInput from '@common/VInput'
 <v-input
