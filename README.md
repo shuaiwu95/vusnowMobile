@@ -56,6 +56,7 @@ this.$api['system.loginIn']({
 // ConView 外层容器组件 该组件可自动计算除顶部导航和底部导航外中间可用区域的高度
 <con-view></con-view>
 ```
+##### vuescroll
 ```
 // vuescroll 下拉刷新、上拉加载
 <vue-scroll
@@ -81,6 +82,7 @@ methods: {
     }
   }
 ```
+##### 输入框
 ```
 // 输入框
 import VInput from '@common/VInput'
@@ -91,6 +93,7 @@ import VInput from '@common/VInput'
     icon="icon-pswInput" // icon 头部图标
     type="password"/> // type 输入框类型
 ```
+##### 按钮
 ```
 // 按钮
 import VButton from '@common/VButton'
