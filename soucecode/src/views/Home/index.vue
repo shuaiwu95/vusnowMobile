@@ -1,6 +1,6 @@
 <template>
     <div>
-        <yd-navbar title="首页" height="2.4rem">
+        <yd-navbar title="首页" height="2.4rem" fontsize="1rem">
             <!-- <router-link to="#" slot="left">
                 <yd-icon name="shopcart-outline" size="1.2rem" color="#09BB07"></yd-icon>
             </router-link> -->
@@ -14,16 +14,19 @@
               :loadStart='loadStart'
               :noData='true'
           >
-           <ul>
-              <li>list------1</li>
-              <li>list------2</li>
-              <li>list------3</li>
-              <li>list------4</li>
-              <li>list------5</li>
-              <li>list------6</li>
-              <li>list------7</li>
-              <li>list------8</li>
-           </ul>
+            <div>
+              <span>请尝试手指向下滑动~</span>
+              <ul>
+                  <li>list------1</li>
+                  <li>list------2</li>
+                  <li>list------3</li>
+                  <li>list------4</li>
+                  <li>list------5</li>
+                  <li>list------6</li>
+                  <li>list------7</li>
+                  <li>list------8</li>
+              </ul>
+            </div>
           </vue-scroll>
         </con-view>
     </div>

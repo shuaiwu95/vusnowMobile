@@ -24,7 +24,7 @@ const routerInstance = new Router({
           component: Home,
           meta: {
             isCache: false,
-            requireAuth: false
+            requireAuth: true
           }
         }, {
           path: 'classview',
