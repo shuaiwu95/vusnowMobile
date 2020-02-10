@@ -9,7 +9,7 @@
                 <yd-icon name="search" color="#0172FF"></yd-icon>
             </router-link>
         </yd-navbar>
-        <con-view>
+        <con-view :noText = "true">
           <vue-scroll
               :refreshStart='refreshStart'
               :loadStart='loadStart'
