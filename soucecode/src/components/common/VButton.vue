@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .v-button-container button {
     width: 100%;
-    height: 2.2rem;
+    height: .8rem;
     border: 0;
     border-radius: 0.5rem;
     color: #ffffff;

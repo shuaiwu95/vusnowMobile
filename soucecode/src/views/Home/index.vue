@@ -1,11 +1,12 @@
 <template>
     <div>
-        <yd-navbar title="首页" height="2.4rem" fontsize="1rem">
+        <yd-navbar>
             <!-- <router-link to="#" slot="left">
                 <yd-icon name="shopcart-outline" size="1.2rem" color="#09BB07"></yd-icon>
             </router-link> -->
+            <span slot="left" style="color: #000000;">统计分析</span>
             <router-link to="#" slot="right">
-                <yd-icon name="search" size="1.2rem" color="#09BB07"></yd-icon>
+                <yd-icon name="search" color="#0172FF"></yd-icon>
             </router-link>
         </yd-navbar>
         <con-view>

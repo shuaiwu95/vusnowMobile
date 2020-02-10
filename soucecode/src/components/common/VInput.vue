@@ -85,17 +85,17 @@ export default {
 .v-input-container {
     display: inline-flex;
     flex-direction: row;
-    padding: 1rem 1rem;
+    padding: .3rem .3rem;
     box-sizing: border-box;
     border-bottom: 1px solid #E7E7E7;
 }
 .v-input-label{
-    font-size: 1rem;
+    font-size: .3rem;
     flex: 1;
-    height: 1rem;
+    height: .2rem;
 }
 .v-input-label span {
-    font-size: 1rem;
+    font-size: .3rem;
     margin-right: 0.5rem;
 }
 .v-input-inp {
@@ -104,8 +104,8 @@ export default {
 }
 .v-input-container input {
     border: 0;
-    height: 1rem;
-    font-size: 1rem;
+    height: .3rem;
+    font-size: .3rem;
     outline:none;
     margin-left: 0.5rem;
 }

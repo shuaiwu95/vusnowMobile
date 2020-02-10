@@ -46,4 +46,26 @@ html,body{
   width: 100%;
   height: 100%;
 }
+@font-face {
+  font-family: 'iconfontMyself';  /* project id 1589910 */
+  src: url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.eot');
+  src: url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1589910_mlsvp2vz4x.svg#iconfont') format('svg');
+}
+[class^="icon-custom-"]:before, [class*=" icon-custom-"]:before {
+  font-family: 'iconfontMyself';
+}
+
+.icon-custom-tjfx:before {
+  content: '\e606';
+}
+.icon-custom-gzt:before {
+  content: '\e607';
+}
+.icon-custom-wd:before {
+  content: '\E609';
+}
 </style>

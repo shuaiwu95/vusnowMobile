@@ -1,15 +1,15 @@
 <template>
     <div>
-       <router-view />
-       <yd-tabbar :fixed="true" fontsize="0.8rem" padding=".6rem 0">
-        <yd-tabbar-item title="首页" link="/" :active="activeHome">
-            <yd-icon name="home" slot="icon" size="1.4rem"></yd-icon>
+       <router-view :include="cachedViews"/>
+       <yd-tabbar :fixed="true" active-color="#0172FF">
+        <yd-tabbar-item title="统计分析" link="/" :active="activeHome">
+            <yd-icon name="tjfx" custom slot="icon"></yd-icon>
         </yd-tabbar-item>
-        <yd-tabbar-item title="分类" link="/classview" :active="activeClass">
-            <yd-icon name="star" slot="icon" size="1.4rem"></yd-icon>
+        <yd-tabbar-item title="工作台" link="/classview" :active="activeClass">
+            <yd-icon name="gzt" custom slot="icon"></yd-icon>
         </yd-tabbar-item>
-        <yd-tabbar-item title="个人" link="/mine" :active="activeMine">
-            <yd-icon name="ucenter-outline" slot="icon" size="1.4rem"></yd-icon>
+        <yd-tabbar-item title="我的" link="/mine" :active="activeMine">
+            <yd-icon name="wd" custom slot="icon"></yd-icon>
         </yd-tabbar-item>
     </yd-tabbar>
     </div>
@@ -26,6 +26,9 @@ export default {
       activeHome: 'getHome',
       activeClass: 'getClass',
       activeMine: 'getMine'
+    }),
+    ...mapGetters('views', { // views.js里面的getters
+      cachedViews: 'cachedViews'
     })
   },
   mounted () {
